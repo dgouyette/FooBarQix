@@ -12,7 +12,7 @@ public class FooBarQixWriter {
         return valeur % divisiblePar == 0;
     }
 
-    public static StringBuilder contient(int valeur) {
+    public static String contient(int valeur) {
         String[] valeurs = String.valueOf(valeur).split("");
         StringBuilder retour = new StringBuilder();
 
@@ -23,7 +23,7 @@ public class FooBarQixWriter {
                  }
             }
         }
-        return retour;
+        return retour.toString();
     }
 
     public static String valueOf(int valeur) {
